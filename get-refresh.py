@@ -1,25 +1,21 @@
-''' This script has been prepared for obtaining the access token and
-    refresh token for Google services such as Google Sheets API. By following
-    the steps below you can achieve the results in my video.
-    Source: https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/google-sheets-connector/introduction-to-google-sheets-connector/administration-of-google-sheets-connector/generating-oauth-2-0-access-tokens.html
-'''
-
 from requests import request
 
-# step 1: fill in the client credentials
-# get from google cloud account CLIENT_ID = ""
-# get from google cloud account CLIENT_SECRET = ""
+# 1. Wypelnij credentials - te same co w update_cell
+CLIENT_ID = ""
+CLIENT_SECRET = ""
 
-#put digikey api developer client_id and secret_id to digi_token.json
+# Wklej link do przeglądarki, wybierz konto i wklej code do ACCESS_CODE
+# 1-razowo, ale po dłuższym czasie może wymagać ponowienia!
+# Uzyj na edge a nie chrome(blokuje dostep)!
+# https://accounts.google.com/o/oauth2/auth?access_type=offline&approval_prompt=auto&client_id=1097952590698-er70obviqsgj3jk9psp730lkfta7kqqt.apps.googleusercontent.com&response_type=code&scope=https://www.googleapis.com/auth/spreadsheets&redirect_uri=http://localhost
 
-# step 2: get a temporary access code manually
-#google user accounts link
+# 2. Wpisz kod aktywacyjny z url (odpowiedzi) po powyzszym linku
+ACCESS_CODE = ""
 
-# get from google cloud account ACCESS_CODE = ""
+# 3. Uruchom skrypt, zeby uzyskać refresh token
 
-# step 3: run this script
 def main():
-    # get refresh token/access token from access code
+    
     url = "https://accounts.google.com/o/oauth2/token"
     data = {
         "grant_type": "authorization_code",
