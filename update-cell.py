@@ -5,6 +5,11 @@ import time
 import sys
 from urllib.parse import quote
 
+'''
+Projekt ma na celu zintegrowanie platformy Digikey ze sprzętem elektronicznym z arkuszami zakupowymi firmy - Google Worksheets w Google Cloud
+Program umożliwia zaczytywanie w czasie rzeczywistym danych produktowych (cena w zależności od ilości, status dostępności, stock, MOQ) z API Digikey w dowolną przestrzeń arkuszy zakupowych
+'''
+
 # 1.1 Wypelnij Google Cloud credentials
 CLIENT_ID_GS = ""
 CLIENT_SECRET_GS = ""
