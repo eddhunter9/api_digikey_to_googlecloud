@@ -1,0 +1,16 @@
+# Lokalne sekrety — nie commituj
+.env
+digi_token.json
+
+# IDE
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.Python
