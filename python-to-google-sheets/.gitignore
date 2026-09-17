@@ -2,6 +2,11 @@
 .env
 digi_token.json
 
+# Przebieg lokalny
+checkpoint.json
+run.log
+logs/
+
 # IDE
 .idea/
 .vscode/

@@ -13,7 +13,7 @@ CLIENT_SECRET = os.getenv("CLIENT_SECRET_GS")
 # Nie na mozilli! Na chrome
 #https://accounts.google.com/o/oauth2/auth?access_type=offline&approval_prompt=auto&client_id=1097952590698-er70obviqsgj3jk9psp730lkfta7kqqt.apps.googleusercontent.com&response_type=code&scope=https://www.googleapis.com/auth/spreadsheets&redirect_uri=http://localhost
 
-ACCESS_CODE = "4/0AVMBsJg3Q8xDfKYnJL-bbCAeSNp6yEI0ixHWzw3s74KyGGd4cjbcSrzkJflJwl0vWZowDQ"
+ACCESS_CODE = "4/0ATsMZqAmU2P_1hW_xAM9vjfiWOwSco_NbKTBSvU-nRQYJuB1mmJtGf_UzrVo3wV-ZY6aTg"
 
 # 2. Uruchom skrypt, zeby uzyskać refresh token
 
